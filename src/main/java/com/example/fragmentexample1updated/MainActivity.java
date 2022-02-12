@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleFragment simpleFragment = (SimpleFragment) fragmentManager.findFragmentById(R.id.fragment_container);
         fragmentTransaction.remove(simpleFragment).commit();
 
-        mOpenButton.setText(R.string.close);
+        mOpenButton.setText(R.string.open);
         isFragmentDisplayed = false;
 
     }

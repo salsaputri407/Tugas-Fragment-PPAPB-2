@@ -29,12 +29,15 @@ public class MainActivity extends AppCompatActivity {
             if (isFragmentDisplayed){
                 showFragment();
             }
+            else{
+                closeFragment();
+            }
         }
 
         mOpenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(isFragmentDisplayed){
+                if(!isFragmentDisplayed){
                     showFragment();
                 }
                 else{
